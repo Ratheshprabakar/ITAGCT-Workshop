@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Machine Learning Workshop - ITAGCT</title>
+	<link rel="icon" href="./img/ita.png" type="image/gif" sizes="16x16">
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	  <!-- Libraries CSS Files -->
+	  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	  <link href="lib/animate/animate.min.css" rel="stylesheet">
+	  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+	  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+		<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+		
+		
+  <!-- Main Stylesheet File -->
+  <link href="user/css/userstyle.css" rel="stylesheet">
+  <script src="user/jquery.min.js"></script>
+  <script src="user/conditional.js"></script>	
+  <link rel="stylesheet" href="user/bootstrap-iso.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+			  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+			<![endif]-->
+	<link href="user/style.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+    <script src="conditional.js"></script>	
+	<link rel="stylesheet" href="css/bootstrap-iso.css" />
+	<link rel="stylesheet" href="css\style.css" />
+</head>
+
+<body>
+	<!-- Header -->
+	<header id="header" style="height: 80px;" >
+		<!-- container -->
+		<div class="container">
+			<!-- navbar header -->
+			<div class="navbar-header">
+				<!-- Logo -->
+				<div class="navbar-brand">
+					<a class="logo" href="index.html">
+							<img class="logo-img-responsive" src="./img/ita.png" alt="logo">
+							<img class="logo-alt-img" src="./img/ita.png" alt="logo">
+						</a>
+				</div>
+				<!-- /Logo -->
+
+				<!-- Mobile toggle -->
+				<button class="navbar-toggle">
+					<i class="fa fa-bars"></i>
+				</button>
+				<!-- /Mobile toggle -->
+			</div>
+			<!-- /navbar header -->
+
+			<!-- Navigation -->
+			<nav id="nav">
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="index.html#speakers">Theme</a></li>
+					<li><a href="#contact">Contact</a></li>
+		
+					<a href="user.html" class="main-btn" style="margin-top:2% ; float:center ">REGISTER</a>
+				</ul>
+			</nav>
+			<!-- /Navigation -->
+
+		</div>
+		<!-- /container -->
+	</header>
+	<!-- /Header -->
+
+	
+   <!--==========================
+      Application Section
+    ============================-->
+		<section  style="padding-bottom: 80px;padding-top: 135px;" >
+			
+				<div class="section-title">
+						<h2 class="title"><span></span> <span style="color: rgb(5, 4, 34);">Workshop Registration</span></h2><br>
+					</div>
+			<div class="container register">
+
+				
+									<div class="row">
+											<div class="col-md-3 register-left">
+													<img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+													<b><h2>ITA GCT</h2></b>
+                          <p>Technical Workshop</p>
+                         <div style="text-align: left;">
+                          <h5><b>INSTRUCTIONS :</b></h5>
+                  
+                            <li>Bring your college ID & Laptop.</li>
+                            <li>Workshop kit & lunch will be provided.</li>
+                            <li>Participation Certificate will be provided.</li>
+                            
+                          
+                          <br>
+                         </div>
+                       
+                         <b style="color: black;">
+                          <ol>
+                          <br>
+                          <li>*On-spot payment only Rs.500/-</li>
+                          </ol>
+                          </b>
+                          
+													
+											</div>
+									
+										<script type="text/javascript">
+										function Validate() 
+													{
+														if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(reg.email.value))
+														{
+															return (true)
+														}
+															alert("You have entered an invalid email address!")
+															return (false)
+													}
+									</script>
+											<div class="col-md-9 register-right" id="live_form">
+													<div class="tab-content" id="myTabContent">													
+														<form name="reg" action="user.php" onSubmit = "return Validate(this)" method="post" >
+																	<div class="row register-form">
+																			<div class="col-md-6">
+																					<div class="form-group">
+																							<input type="text" class="form-control" placeholder="First Name *" pattern='[A-Za-z\\s]*' name="firstname" required	/>
+																					</div>
+																					<div class="form-group">
+																							<input type="text" class="form-control" placeholder="Last Name *" pattern='[A-Za-z\\s]*' name="lastname" required />
+																					</div>
+																					<div class="form-group">
+																							<div class="maxl">
+																									<label class="radio inline" required> 
+																											<input type="radio" name="gender" value="male" checked>
+																											<span> Male </span> 
+																									</label>
+																									<label class="radio inline"> 
+																											<input type="radio" name="gender" value="female">
+																											<span>Female </span> 
+																									</label>
+				
+																							</div>
+																					</div>
+																					
+																					<div class="form-group">
+																							<input type="email" id="email" name="email" class="form-control" placeholder="Your Email *"  value="" required/>
+																					</div>
+																					
+																		
+																					<div class="form-group">
+																							<input type="text" name="phone" minlength="10" maxlength="10" pattern='[0-9]*' name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" required/>
+																					</div>
+													 
+													 
+													 <br>
+													 
+													 
+
+													 <br>
+													 <select name="college" style="width: 300px;" required>
+			<option value="" >------------Select College------------</option>                         
+			
+			<option>AAA College of Engineering &amp; Technology, Virudhunagar</option>
+  <option>Aalim Muhammed Salegh College Of Engineering</option>
+  <option>Aarupadai Veedu Institute of Technology, Vinayaka Mission University</option>
+  <option>ABES Engineering College , Ghaziabad</option>
+  <option>ABV-IIITM, Gwalior</option>
+  <option>ACCET Karaikudi</option>
+  <option>A.C. College of Engineering and Technology</option>
+  <option>Acharaya Nagarjuna University</option>
+  <option>Achariya Bala Siksha Mandir</option>
+  <option>Achariya College of Engineering and Technology</option>
+  <option>Acropolois Technical Campus</option>
+  <option>ACT Anna University</option>
+  <option>Adhiyamaan College of Engineering, Hosur</option>
+  <option>Adithya Institute of Technology</option>
+  <option>Agni College Of Technology</option>
+  <option>Alagappa Chettiar College of Engineering and Technology, Karaikudi</option>
+  <option>Al-Ameen Engineering College</option>
+  <option>Al-Ameer College of Engineering and IT</option>
+  <option>Alpha College of Engineering</option>
+  <option>Alpha College of Engineering and Technology</option>
+  <option>Amara Institute of Engineering and Technology</option>
+  <option>American College</option>
+  <option>AMET University</option>
+  <option>Amity Institute of Space Science and Technology</option>
+  <option>Amrita Vishwa Vidyapeetham, Amritapuri</option>
+  <option>Amrita Vishwa Vidyapeetham, Bengaluru</option>
+  <option>Amrita Vishwa Vidyapeetham, Coimbatore</option>
+  <option>Amrita Vishwa Vidyapeetham, Kochi</option>
+  <option>Amrita Vishwa Vidyapeetham, Mysore</option>
+  <option>AMS College of Engineering</option>
+  <option>Anand Institute of Higher Technology</option>
+  <option>Andhra University</option>
+  <option>Angel College of Engineering and Technology</option>
+  <option>Anil Neerukonda Institute Of Technology and Science</option>
+  <option>Anjalai Ammal Mahalingam Engineering College</option>
+  <option>Annamacharya Institute of Technology and Sciences, Tirupati</option>
+  <option>Annamalai university</option>
+  <option>Anna University - BIT Campus Tiruchirappalli</option>
+  <option >Anna University School of Architecture and Planning</option>
+  <option>Anuradha Engineering College Chikhali</option>
+  <option>Apollo Priyadarshanam Institute of Technology</option>
+  <option>Army Institute of Management and Technology</option>
+  <option>Arunai Engineering College</option>
+  <option>Audisankara College of Engineering and Technology(ASCET)</option>
+  <option>Aurora's Scientific and Technological Institute</option>
+  <option>AVN Institute of Engineering and Technology</option>
+  <option>Babasaheb Bhimrao Ambedkar University</option>
+  <option>Badruka College of Commerce and Arts</option>
+  <option>Banasthali University</option>
+  <option>Bandung Institute of Technology</option>
+  <option>Bangalore Institute of Management Studies</option>
+  <option>Bangalore Institute of Technology</option>
+  <option>Bangladesh University of Engineering and Technology</option>
+  <option>Bannari Amman Institute of Technology</option>
+  <option>Bapatla Engineering College</option>
+  <option >Bapatla Women's Engineering College</option>
+  <option>Barathiyar University</option>
+  <option>Bengal Engineering and Science University, Shibpur</option>
+  <option>Bharathidasan Institute of Management</option>
+  <option>Bharathidasan University</option>
+  <option>Bharathiyar College of Engineering and Technology</option>
+  <option >Bharath Niketan Engineering College</option>
+  <option>Bharath University</option>
+  <option>Bharat Institute of Engineering and Technology</option>
+  <option>Bhoj Reddy Engineering College for Women</option>
+  <option>Bhopal School of Social Sciences</option>
+  <option >Birla Institute of Technology, Mesra</option>
+  <option>BITS Pilani Hyderabad Campus</option>
+  <option>BITS Pilani K.K. Birla Goa Campus</option>
+  <option>BMS Engineering College</option>
+  <option>BMS Institute of Technology</option>
+  <option >Brindavan Institute of Technology and Science</option>
+  <option>B.S.Abdur Rahman University</option>
+  <option >BSA Crescent Engineering College</option>
+  <option>C. Abdul Hakeem College of Engineering and Technology</option>
+  <option>Canara Engineering College</option>
+  <option>CARE School of Engineering</option>
+  <option>Carnegie Mellon University</option>
+  <option>CBM Arts and Science College</option>
+  <option>Central Electro Chemical Research Institute</option>
+  <option>Central University of Las Villas</option>
+  <option >Chaitanya Engineering College</option>
+  <option >Chaithanya Bharathi Institute of Technology(CBIT)</option>
+  <option >Chalapathi Institute of Engineering and Technology</option>
+  <option >Chandubhai S Patel Institute of Technology(CSPIT)</option>
+  <option >Channabasaveshwara Institute of Technology</option>
+  <option >Chendhuran College of Engineering and Technology</option>
+  <option >Chennai Film School</option>
+  <option >Chennai institute of technology</option>
+  <option >Chennai Mathematical Institute</option>
+  <option >Chettinad College of Engineering and Technology</option>
+  <option >Christ the King Engineering College</option>
+  <option >Christu Jyoti Institute of Technology  Science(CJITS)</option>
+  <option >Christ University</option>
+  <option >CMR Engineering College</option>
+  <option >CMR Institute of Technology</option>
+  <option >CMR Technical Campus</option>
+  <option >Cochin University of Science and Technology</option>
+  <option >Coimbatore Institute of Engineering and Technology (CIET)</option>
+  <option >Coimbatore Institute of Technology</option>
+  <option >College of Applied Science, Vadakkencherry</option>
+  <option >College of Engineering and Management Punnapra, Alappuzh</option>
+  <option >College of Engineering and Technology, Bhubaneswar</option>
+  <option >College of Engineering Chengannur</option>
+  <option >College of Engineering, Guindy</option>
+  <option >College of Engineering Thalassery</option>
+  <option >College of Engineering Trivandrum, Kerala</option>
+  <option >College of Technology, Pantnagar</option>
+  <option >Comenius University in Bratislava</option>
+  <option >CSI College of Engineering</option>
+  <option >CVR College of Engineering</option>
+  <option >Delhi College Of Engineering</option>
+  <option >Delhi University</option>
+  <option >D.G Vaishnav college</option>
+  <option >Dhanalakshmi College of Engineering</option>
+  <option >Dhanalakshmi Srinivasan College of Engineering and Technology</option>
+  <option >Dhirajlal Gandhi College Of Technology</option>
+  <option >DKTE Society&#39;s Textile and Engineering Institute, Ichalkaranji</option>
+  <option >DMI college of engineering</option>
+  <option >DMS Pondicherry University</option>
+  <option >Dr G R Damodaran Institute of Management</option>
+  <option >Dr. GRD College of Arts and Science</option>
+  <option >D.R.K. College of Engineering and Technology</option>
+  <option >Dr. Mahalingam College of Engineering and Technology</option>
+  <option >Dr. Nallini Institution of Engineering and Technology</option>
+  <option >Dr. N.G.P. Institute of Technology</option>
+  <option >Dronacharya College of Engineering</option>
+  <option >Dr. RMLS College, Muzaffarpur</option>
+  <option >Dr.RR  SR Technical University</option>
+  <option >Dr. S.J.S Paul Memorial College of Engineering and Technology</option>
+  <option >DVR  DHS MIC College of Technology</option>
+  <option >Easwari Engineering College</option>
+  <option >EGS Pillay Engineering College</option>
+  <option >Einstein College of Engineering</option>
+  <option>ER  DCI Institute of Technology</option>
+  <option >Erode Builder Educational Trust&#39;s Group of Institutions</option>
+  <option >Er.Perumal Manimekalai College of Engineering</option>
+  <option >Ethiraj college for Women</option>
+  <option >Excel group of instution</option>
+  <option >FEAT Annamalai University</option>
+  <option >Francis Xavier Engineering College</option>
+  <option >Gandhigram Rural institute</option>
+  <option >Gandhi Institute for Technogical Advancement</option>
+  <option >Gayatari Vidya Parishad College Of Engineering</option>
+  <option >GITAM Institute of Management</option>
+  <option >GITAM Institute of Science</option>
+  <option >GITAM Institute of Technology, Hyderabad</option>
+  <option >GITAM Institute of Technology, Vizag</option>
+  <option >GITAM School of Technology, Bengaluru</option>
+  <option >G.K.M College of Engineering and Technology</option>
+  <option >GKM College of Engineering and Technology</option>
+  <option >Gnanamani College of Engineering</option>
+  <option >G. Narayanamma Institute of Technology and Science</option>
+  <option >Gokaraju Rangaraju Institute of Engineering and Technology</option>
+  <option >Gossener College</option>
+  <option >Government College of Engineering, Bargur</option>
+  <option>Government College of Engineering, Bodinayakkanur</option>
+  <option>Government College of Engineering, Dharmapuri</option>
+  <option >Government College of Engineering, Salem</option>
+  <option >Government College of Engineering,srirangam</option>
+  <option>Government College of Engineering, Thanjavur</option>
+  <option >Government College of Engineering, Tirunelveli</option>
+  <option >Government College of Technology, Coimbatore</option>
+  <option >Government Engineering College, Thrissur</option>
+  <option >Government Engineering College, Trivandrum</option>
+  <option >Government Model Engineering College</option>
+  <option >G Pullaiah College of Engineering and Technology</option>
+  <option >G.Pulla Reddy Engineering College</option>
+  <option >Great Lakes Institute of Management</option>
+  <option >GRT Institute of Engineering and Technology</option>
+  <option >Gudlavalleru Engineering College</option>
+  <option >Gurgaon Institute of Technology</option>
+  <option >Guru Ghasidas Vishwavidyalaya</option>
+  <option >Guru Nanak College</option>
+  <option >Gyan Ganga College of Technology</option>
+  <option >Gyan Vihar School of Engineering and Technology Jaipur</option>
+  <option >Haldia Institute of Technology</option>
+  <option >Hindustan College of Engineering</option>
+  <option >IET DAVVINDORE</option>
+  <option >Image College of Arts, Animation and Technology</option>
+    <option >Indian Institute of Information Technology, Allahabad</option>
+  <option >Indian Institute of Information Technology, Bhubaneswar</option>
+  <option >Indian Institute of Information Technology Design and Manufacture, Kancheepuram</option>
+  <option >Indian Institute of Information Technology, Design and Manufacturing (IIITDM)</option>
+  <option >Indian Institute of Information Technology, Hyderabad</option>
+  <option >Indian Institute of Management Bangalore</option>
+  <option >Indian Institute of Management Calcutta</option>
+  <option >Indian Institute of Management Trichy</option>
+  <option >Indian Institute of Science Bangalore</option>
+  <option >Indian Institute of Science Education and Research, Kolkata</option>
+  <option >Indian Institute of Science Education and Research, Pune</option>
+  <option >Indian Institute of Science Education and Research, Thiruvananthapuram</option>
+  <option >Indian Institute of Space Science and Technology</option>
+  <option >Indian Institute of Technology Bombay</option>
+  <option >Indian Institute of Technology Delhi</option>
+  <option >Indian Institute of Technology Guwahati</option>
+  <option >Indian Institute of Technology, Jodhpur</option>
+  <option >Indian Institute of Technology Kanpur</option>
+  <option >Indian Institute of Technology, Kharagpur</option>
+  <option >Indian Institute of Technology Madras</option>
+  <option >Indian Institute of Technology Roorkee</option>
+  <option >Indian Institute of Technology ROPAR</option>
+  <option >Indian Railways Institute of Mechanical and Electrical Engineering</option>
+  <option >Indian School of Mines, Dhanbad</option>
+  <option >Indira Gandhi Institute of Technology</option>
+  <option >Indra Ganesan College of Engineering, </option>
+  <option >Infant Jesus College of Engineering</option>
+  <option >Info Institute of Engineering</option>
+  <option >Institute of Chemical Technology</option>
+  <option >Institute of Engineering and Management, Kolkata</option>
+  <option >Institute of Engineering and Technology</option>
+  <option >Institute Of Engineering and TechnologyDAVV</option>
+  <option >Institute of Hotel Management Catering Technology and Applied Nutrition, Mumbai</option>
+  <option >Institute of Management, Nirma University</option>
+  <option >Institute of Road and Transport Technology</option>
+  <option >Institute of Science and Technology</option>
+  <option >Institute of Technology and Management</option>
+  <option >Institute of Technology and Sciences(ITS), Bhiwani</option>
+  <option >International Institute for Population Sciences</option>
+  <option >International Institute of Information Technology, Bangalore</option>
+  <option >International Institute of Information Technology, Hyderabad</option>
+  <option >Jadavpur University</option>
+  <option >Jansons institute of technology, coimbatore</option>
+  <option >Jawahar Engineering College</option>
+  <option >Jawaharlal Nehru Technological University</option>
+  <option >Jaya Engineering College</option>
+  <option >Jayam College of Engineering and Technology</option>
+  <option >Jayaram College of Engineering and Technology</option>
+  <option >Jaypee Institute of Information Technology</option>
+  <option >Jay Shri Ram Group of Institution</option>
+  <option >J. B. Institute of Engineering and Technology</option>
+  <option >Jeppiaar Engineering College</option>
+  <option >J J College of Engineering and Technology</option>
+  <option >JNTUA College of Engineering Pulivendula</option>
+  <option >Jodhpur Institute of Engineering  Technology</option>
+  <option >Johns Hopkins University</option>
+  <option >JSS Academy Of Technical Education</option>
+  <option >Jyothi Engineering College</option>
+  <option >Kakatiya Institute of Technology and Science, Warangal</option>
+  <option >Kakatiya University</option>
+  <option >Kalaignar Karunanidhi Institute of Technology</option>
+  <option >Kalasalingam Institute of Technology</option>
+  <option >Kalasalingam University</option>
+  <option >Kalinga Institute of Industrial Technology</option>
+  <option >Kamaraj College of Engineering and Technology</option>
+  <option >Kanchi Pallavan Engineering College</option>
+  <option >Karpagam College of Engineering</option>
+  <option >Karpagam Institute of Technology, Coimbatore</option>
+  <option >Karpagam University</option>
+  <option >Karpaga Vinayaga College of Engineering and Technology</option>
+  <option >Karunya University</option>
+  <option >Kathir College of Engineering</option>
+  <option >KCG College of Technology</option>
+  <option >KGISL Institute Of Technology</option>
+  <option >Kings College of Engineering</option>
+  <option >KIT'S College of Engineering , Kolhapur</option>
+  <option >KKR  KSR Institute of Technology and Sciences</option>
+  <option >K.L.N College Of Engineering</option>
+  <option >K.L.N College of Information Technology</option>
+  <option >Knowledge Institute of Technology(KIOT)</option>
+  <option >Kolkata Institute of Technology</option>
+  <option >Koneru Lakshmaiah College of Engineering</option>
+  <option >Kongu Engineering College</option>
+  <option >Kongunadu College of Engineering and Technology</option>
+  <option >KPR Institute of Engineering and Technology</option>
+  <option >K.Ramakrishnan college of engineering</option>
+  <option >K Ramakrishnan College of Technology</option>
+  <option >K.S.Rangasamy College of Technology ( KSR)</option>
+  <option >KSR Institute For Engineering And Technology</option>
+  <option >KS School of Engineering and Management</option>
+  <option >Kumaraguru college of Technology(KCT), Coimbatore</option>
+  <option >Kuppam engineering college</option>
+  <option >Laki Reddy Bali Reddy College of Engineering</option>
+  <option >Lakshmi Narain College of Technology</option>
+  <option >Latha Mathavan Engineering College</option>
+  <option >L. J. Institute of Engineering and Technology</option>
+  <option >Lovely Professional University</option>
+  <option >Loyola-ICAM College of Engineering and Technology</option>
+  <option >Loyola Institute of Business Administration</option>
+  <option >Maamallan Institute of Technology</option>
+  <option >Madha Institute of Engineering and Technology</option>
+  <option >Madras Christian College</option>
+  <option >Madras Institute of Technology</option>
+  <option >Madras University</option>
+  <option >Madurai Institute Of Engineering and Technology</option>
+  <option >Magna College of Engineering</option>
+  <option >Maharaja Agrasen Institute of Technology</option>
+  <option >Maharaja institute of technology, coimbatore</option>
+  <option >Maharaja Prithvi Engineering College</option>
+  <option >Maharaja Sayajirao University of Baroda</option>
+  <option >Maharshi Arvind Institute of Science and Management</option>
+  <option >Mahatma Gandhi Institute of Technology</option>
+  <option >Mahendra Engineering College</option>
+  <option >Mahendra Institute of Technology</option>
+  <option >Mailam Engineering College</option>
+  <option >Malaviya National Institute of Technology, Jaipur</option>
+  <option >Malla Reddy Engineering College</option>
+  <option >MAM College of Engineering</option>
+  <option >M.A.M College of Engineering and Technology</option>
+  <option >M.A.M. School of Architecture</option>
+  <option >M.A.M School of Engineering</option>
+  <option >Management Development Institute</option>
+  <option >Manakula Vinayagar Institute of Technology</option>
+  <option >Manav Rachna International University</option>
+  <option >Mangalam College of Engineering</option>
+  <option >Manipal Institute of Technology</option>
+  <option >Mannar Thirumalai Naicker College</option>
+  <option >Mar Athanasius College of Engineering</option>
+  <option >Mar Baselios College of Engineering and Technology</option>
+  <option >M.A.R College of Engineering and Technology</option>
+  <option >Maturi Venkata Subba Rao Engineering College</option>
+  <option >Maulana Azad National Institute of Technology, Bhopal</option>
+  <option >Medi-Caps Institute of Technology and Management</option>
+  <option >Meenakshi College Of Engineering</option>
+  <option >Meenakshi Sundararajan Engineering College</option>
+  <option >Mepco Schlenk Engineering College</option>
+  <option >MES College of Engineering</option>
+  <option >M.I.E.T  ENGINEERING COLLEGE</option>
+  <option >MIT Campus, Anna University</option>
+  <option >M. Kumarasamy College of Engineering</option>
+  <option >MNIT Jaipur</option>
+  <option >MNM Jain Engineering College</option>
+  <option >Model Engineering College</option>
+  <option >Modern Education Society,s College of Engineering</option>
+  <option >Mohamed Sathak Engineering College</option>
+  <option >Mohandas College of Engineering and Technology</option>
+  <option >Moogambigai College of Engineering</option>
+  <option >M.O.P. Vaishnav College for Women</option>
+  <option >Motilal Nehru National Institute of Technology, Allahabad</option>
+  <option >Mount Zion College of Engineering and Technology</option>
+  <option >M.S. Ramaiah Institute of Technology</option>
+  <option >Muffakham Jah College of Engineering and Technology</option>
+  <option >Mumbai University</option>
+  <option >Muthayammal engineering college</option>
+  <option >Muzaffarpur Institute of Technology</option>
+  <option >MVGR College of Engineering</option>
+  <option >MVJ College of Engineering</option>
+  <option >M.V.S.R Engineering College</option>
+  <option >Nalanda Degree College</option>
+  <option >Nandha Engineering College</option>
+  <option >Narasu's Sarathy Institute of Technology</option>
+  <option >National Engineering college</option>
+  <option >National Institute of Engineering</option>
+  <option >National Institute Of Science And Technology</option>
+  <option >National Institute of Technology, Agartala</option>
+  <option >National Institute of Technology, Arunachal Pradesh</option>
+  <option >National Institute of Technology, Calicut</option>
+  <option >National Institute of Technology, Delhi</option>
+  <option >National Institute of Technology, Durgapur</option>
+  <option >National Institute of Technology, Goa</option>
+  <option >National Institute of Technology, Hamirpur</option>
+  <option >National Institute of Technology, Jalandhar</option>
+  <option >National Institute of Technology, Jamshedpur</option>
+  <option >National Institute of Technology, Karnataka, Surathkal</option>
+  <option >National Institute of Technology, Kurukshetra</option>
+  <option >National Institute of Technology, Manipur</option>
+  <option >National Institute of Technology, Meghalaya</option>
+  <option >National Institute of Technology, Mizoram</option>
+  <option >National Institute of Technology, Nagaland</option>
+  <option >National Institute of Technology, Patna</option>
+  <option >National Institute of Technology, Puducherry</option>
+  <option >National Institute of Technology, Raipur</option>
+  <option >National Institute of Technology, Rourkela</option>
+  <option >National Institute of Technology, Sikkim</option>
+  <option >National Institute of Technology, Silchar</option>
+  <option >National Institute of Technology, Srinagar</option>
+  <option >National Institute of Technology, Tiruchirapalli</option>
+  <option >National Institute of Technology, Uttarakhand</option>
+  <option >National Institute of Technology, Warangal</option>
+  <option >National Research University of Information TechnologiesMechanics and Optics (NRU ITMO)</option>
+  <option >Nehru Institute of Engineering and Technology</option>
+  <option >Netaji Subhas Institute of Technology (NSIT)</option>
+  <option >Nirma University of Science  Technology</option>
+  <option >Nitte Mahalinga Adyanthaya Memorial Institute of Technology (NMAMIT)</option>
+  <option >Northern India Engineering College</option>
+  <option >NPR College of Engineering  Technology (NPRCET)</option>
+  <option >NRI INSTITUE OF TECHNOLOGY (NRIIT)</option>
+  <option >Odaiyappa College of Engineering and Technology (OCET)</option>
+  <option >Oriental Institute of Science and Technology (OIST)</option>
+  <option >Oxford College of Engineering and Technology</option>
+  <option >Paavai College of Engineering</option>
+  <option >PA College of Engineering and Technology</option>
+  <option >Padmasri Dr. B.V Raju Institute of Technology (BVRIT)</option>
+  <option >Panimalar Engineering College</option>
+  <option >Pannaikadu Veerammal Paramasivam College of Engineering and Technology </option>
+  <option >Pannaikadu Veerammal Paramasivam College of Engineering and Technology (PVP college of Engineering  Technology)</option>
+  <option >Parisutham Institute of Technology and Science(PITS)</option>
+  <option >Park College of Engineering and Technology (PCET)</option>
+  <option >Pathfinder Engineering College</option>
+  <option >P.B. College Of Engineering (PBCE)</option>
+  <option >PBR Visvodaya Institute of Technology and Science (PBR VITS)</option>
+  <option >People's Education Society Institute of TechnologySouth Campus (PESIT)</option>
+  <option >periyar maniammai university (PMU)</option>
+  <option >PERUNTHALAIVAR KAMARAJAR INSTITUTE OF ENGINEERING AND TECHNOLOGY (PKIET)</option>
+  <option >PET Engineering College</option>
+  <option >P.M.R Engineering College</option>
+  <option >Podhigai College of Engineering  Technology</option>
+  <option >Pondicherry University</option>
+  <option >Ponnaiyah Ramajayam College of Engineering  Technology (PRCET)</option>
+  <option >PPG Institute of Technology</option>
+  <option >Prasad v. Potluri Siddhartha Institute of Technology  </option>
+  <option >Prasad v. Potluri Siddhartha Institute of Technology (PVP Siddhartha Institute of Technology)</option>
+  <option >PRATHYUSHA INSTITUTE OF TECHNOLOGY AND MANAGEMENT</option>
+  <option >P. R. Engineering College (PREC)</option>
+  <option >Prince Shri Venkateshwara Padmavathy Engineering College</option>
+  <option >PRIST University</option>
+  <option >PSG College of Arts and Science</option>
+  <option >P.S.G COLLEGE OF TECHNOLOGY</option>
+  <option >PSG Institute of Technology and Applied research</option>
+  <option >PSG POLYTECHNIC COLLEGE</option>
+  <option >PSGR Krishnammal College for Women, coimbatore</option>
+  <option >PSNA College of Engineering and Technology (PSNA CET)</option>
+  <option >P.S.R.ENGINEERING COLLEGE</option>
+  <option >Pune Institute of Computer Technology (PICT)</option>
+  <option >Pune Vidhyarthi Grihas College of Engineering and Technology (PVGCOET)</option>
+  <option >Raja College of Engineering and Technology (RajaCET)</option>
+  <option >Rajagiri College Of Social Sciences</option>
+  <option >Rajagiri School of Engineering and Technology</option>
+  <option >Rajalakshmi Engineering College</option>
+  <option >Rajalakshmi Institute of Technology</option>
+  <option >Rajiv Gandhi College of Engineering and Technology (RGCET)</option>
+  <option >Ramakrishna Mission Vivekananda College</option>
+  <option >Rama Nagappa Shetty(RNS) Institute of Technology and Management Studies</option>
+  <option >Ramco Institute of Technology</option>
+  <option >Ranganathan Engineering College</option>
+  <option >Ranipettai Engineering College</option>
+  <option >Rashtreeya Vidyalaya College of Engineering (RV College of Engineering)</option>
+  <option >Rathinam college of engineering</option>
+  <option >RMD Engineering College</option>
+  <option >R.M.K. College of Engineering  Technology(RMKCET)</option>
+  <option >R.M.K Engineering College</option>
+  <option >R. N. Modi Engineering College (RMEC)</option>
+  <option >Roever College of Engineering  Technology (Roever Tech)</option>
+  <option >Royal College of Engineering  Technology (RCET)</option>
+  <option >RRASE COLLEGE OF ENGINEERING</option>
+  <option >RSR Engineering College</option>
+  <option >Rungta College of Engineering  Technology (RCET)</option>
+  <option >R V R  J C College of Engineering (Rayapati Venkata Rangarao  Jagarlamudi Chandramouli)</option>
+  <option >RVS College of Engineering and Technology</option>
+  <option >RVS school of architecture</option>
+  <option >Saarland University</option>
+  <option >SACS MAVMM Engineering College</option>
+  <option >S.A. Engineering College</option>
+  <option >Sanjay Ghodawat Group of Institute</option>
+  <option >Sant Longowal Institute of Engineering and Technology (SLIET)</option>
+  <option >Saranathan College of Engineering</option>
+  <option >Sardar Raja College of Engineering (SRCE)</option>
+  <option >Sardar Vallabhbhai National Institute of Technology (SVNIT)</option>
+  <option >Sasi Institute of Technology  Engineering</option>
+  <option >SASTRA University(Shanmugha Arts, Science, Technology  Research Academy)</option>
+  <option >Sasurie College of Engineering</option>
+  <option >Sathyabama University/Sathyabama Institute of Science and Technology</option>
+  <option >Saveetha Engineering College</option>
+  <option >Saveetha University</option>
+  <option >SBM College of Engineering and Technology (SBMCET)</option>
+  <option >School of Computer Science  Information Technology. Devi Ahilya Vishwavidyalaya</option>
+  <option >School of EngineeringCochin University of Science and Technology (CUSAT)</option>
+  <option >Seethalakshmi Ramaswami college</option>
+  <option >Selvam College of Technology</option>
+  <option >Sengunthar Engineering College, Erode</option>
+  <option >Sengunthar Engineering College, Tiruchengode, Namakkal</option>
+  <option >Seth Jai Parkash Mukand Lal Institute of Engineering and Technology</option>
+  <option >Sethu Institute Of Technology</option>
+  <option >shanmuganathan engineering college</option>
+  <option >Shivani College of Engineering  Technology (SCET)</option>
+  <option >Shree Motilal Kanhaiyalal Fomra Institute of Technology</option>
+  <option >Shreenivasa Engineering College (SEC)</option>
+  <option >Shree Venkateshwara Hi-Tech Engineering College</option>
+  <option >Shri Angalamman College of Engineering and Technology (SACET)</option>
+  <option >Shri Ramswaroop Memorial College of Engineering and Management (SRMCEM)</option>
+  <option >SHRI SAPTHAGIRI INSTITUTE OF TECHNOLOGY (SSIT)</option>
+  <option >Sikkim Manipal University SMU</option>
+  <option >SKP Engineering College (SKPEC)</option>
+  <option >SKP Institute of Technology SKPIT</option>
+  <option >SKR Engineering College SKREC</option>
+  <option >SMK Fomra Institute of Technology</option>
+  <option >SNS college of Engineering, coimbatore</option>
+  <option >SNS COLLEGE OF TECHNOLOGY</option>
+  <option >SONA COLLEGE OF TECHNOLOGY.</option>
+  <option >SREE BUDDHA COLLEGE OF ENGINEERING</option>
+  <option >Sree Chitra Thirunal College of Engineering SCTCE</option>
+  <option >Sreenidhi Institute of Science and Technology</option>
+  <option >SREE SAKTHI ENGINEERING COLLEGE</option>
+  <option >Sree Sastha Institute of Engineering and Technology (SSIET)</option>
+  <option >Sree sowdambika college of engineering</option>
+  <option >Sree Vidyanikethan Engineering College</option>
+  <option >Sreyas Institute of Engineering  Technology</option>
+  <option >Sri Bhagawan Mahaveer Jain College</option>
+  <option >Sri Chaitanya Degree College</option>
+  <option >Sri Chandrasekarendra Saraswathi Viswa Maha Vidyalaya (SCSVMV)</option>
+  <option >Sridevi Womens Engineering College</option>
+  <option >Sri Eshwar College of Engineering</option>
+  <option >Sri Ganesh College Of Engineering and Technology ( SGCET )</option>
+  <option >Sri Guru Institute of Technology, coimbatore</option>
+  <option >SRI JAYACHAMARAJENDRA COLLEGE OF ENGINEERING (SJCE)</option>
+  <option >sri krishna arts and science college</option>
+  <option >Sri Krishna College of Engineering  Technology (SKCET)</option>
+  <option >Sri Krishna college of technology</option>
+  <option >Sri Manakula Vinayagar Engineering College</option>
+  <option >Sri Muthukumaran Institute Of Technology SMIT</option>
+  <option >Sri Nandhanam College of Engineering Technology</option>
+  <option >Srinivasa Institute of Engineering and Technology</option>
+  <option >Srinivasan Engineering College</option>
+  <option >Sri Padmavati Mahila Visvavidyalayam (SPMVV)</option>
+  <option >Sri ramakrishna college of arts and science for women</option>
+  <option >Sri Ramakrishna Engineering College</option>
+  <option >Sri Ramakrishna Institute of Technology</option>
+  <option >Sriram Engineering College</option>
+  <option >Sri Sai Ram Engineering college</option>
+  <option >Sri Shakthi Institute of Engineering and Technology</option>
+  <option >Sri Sivasubramaniya Nadar College (SSN) of Engineering</option>
+  <option >Sri Venkateswara College of Engineering (SVCE)</option>
+  <option >Sri Venkateswara University</option>
+  <option >SRM University</option>
+  <option >SSM Institute of Engineering and Technology</option>
+  <option >SSR Engineering College</option>
+  <option >Star Lion College of Engineering and Technology</option>
+  <option >St. Berchmans(SB) College</option>
+  <option >St. Joseph's College of Engineering and Technology</option>
+  <option >St. Joseph's Institute of Technology</option>
+  <option >St. Mary's Engineering College</option>
+  <option >St. Peter's College of Engineering and Technology</option>
+  <option >St. Xavier's College</option>
+  <option >Sudharsan Engineering College</option>
+  <option >Supreme Knowledge Foundation Group of Institution</option>
+  <option >SV National Institute of Technology, Surat</option>
+  <option >SVS College of Engineering, coimbatore</option>
+  <option >SVU College of Engineering, Sri Venkateswara University</option>
+  <option >Swarnandhra College of Engineering and Technology</option>
+  <option >Symbiosis Institute of International Business</option>
+  <option >Tagore Engineering College</option>
+  <option >Tamilnadu Engineering College</option>
+  <option >Tbilisi State University</option>
+  <option >Techno India College of Technology</option>
+  <option >Tejaa Shakthi Institute of Technology for Women</option>
+  <option >Thadomal Shahani Engineering College</option>
+  <option >Thangal Kunju Musaliar College of Engineering, Kollam</option>
+  <option >Thanthai Periyar Government College Of Technology</option>
+  <option >Thapar University</option>
+  <option >The University of Chicago</option>
+  <option >The University of Texas at Dallas</option>
+  <option >Thiyagarajar College of Engineering</option>
+  <option >Thiyagarajar School of Management</option>
+  <option >T J Institute of Technology</option>
+  <option >T.K.M College of Engineering</option>
+  <option >Toc H Institute of Science And Technology</option>
+  <option >Trichy Engineering College</option>
+  <option >Triumphant Institute of Management Education</option>
+  <option >TRP Engineering College</option>
+  <option >Ultra College of Engineering and Technology for Women</option>
+  <option >United Institute of Technology</option>
+  <option >University College of Engineering Panruti</option>
+  <option >University College of Engineering, Pattukkottai</option>
+  <option >University College of Engineering Tindivanam</option>
+  <option >University College of Engineering Villupuram</option>
+  
+  <option >Urumu Dhanalakshmi College</option>
+  <option >Usha Rama College of Engineering and Technology</option>
+  <option >Valliammai Engineering College</option>
+  <option >Vandayar Engineering College</option>
+  <option >Vardhaman College of Engineering</option>
+  <option >Varuvan Vadivelan Institute of Technology</option>
+  <option >Vasireddy Venktadri Institute of Technology</option>
+  <option >Veerammal Engineering College</option>
+  <option >Veermata Jijabai Technological Institute</option>
+  <option >Velagapudi Ramakrishna Siddhartha Engineering College</option>
+  <option >Velalar College of Engineering and Technology</option>
+  <option >Vellamal College of Engineering and Technology</option>
+  <option >Vellamal Engineering College</option>
+  <option >Vellamal Institute of Technology</option>
+  <option >Vels University</option>
+  <option >Vel Tech High Tech, Dr.Rangarajan Dr.Sakunthala Engineering College</option>
+  <option >Veltech University</option>
+  <option >Vidhya Jyothi Institute of Technology</option>
+  <option >Vidyaa Vikas College of Engineering and Technology</option>
+  <option >Vignan&#39;s Lara Institute of Technology and Sciences</option>
+  <option >Vinayaka Mission's Kirupananda Variyar Engineering College</option>
+  <option >Visvesvarya National Institute of Technology, Nagpur</option>
+  <option >VITS College of Engineering</option>
+  <option >VIT University, Chennai</option>
+  <option >VIT University, Vellore</option>
+  <option >Vivekananda Institute of Technology</option>
+  <option >Vivekanandha College of Engineering for Women</option>
+  <option >VKS College of Engineering and Technology</option>
+  <option >VRS college of Engineering and Technology</option>
+  <option >V.R. Siddhartha Engineering College</option>
+  <option >V.S.B Engineering college, Karur</option>
+  <option >VSB Enginnering College</option>
+  <option >Vyas Institutes of Higher Education, Jodhpur</option>
+  <option >Xavier Labour Relations Institute</option>
+  <option >Others</option>
+
+	</select><br>
+	<br>
+	<select id="department" name="department" style="width: 300px;" required>
+		<option value="">------------Select Department------------</option>                         
+		<option>Aeronautical Engineering</option>
+		<option>Agriculture Engineering</option>
+		<option>Apparel Technology</option>
+		<option>Architecture</option>
+		<option>Automobile Engineering</option>
+		<option>Bio Medical Engineering</option>
+		<option>Bio-Technology</option>
+		<option>Chemical Engineering</option>
+		<option>Civil Engineering</option>
+		<option>Computer Science and Engineering</option>
+		<option>Electrical and Electronics Engineering</option>
+		<option>Electronics and Communication Engineering</option>
+		<option>Electronics and Instrumentation Engineering</option>
+		<option>Electronics and Telecommunication Engineering</option>
+		<option>Fashion Technology</option>
+		<option>Food Technology</option>
+		<option>Industrial Engineering</option>
+		<option>Information Technology</option>
+		<option>Instrumentation and Control Engineering</option>
+		<option>Marine Engineering</option>
+		<option>Master of Business Administration</option>
+		<option>Master of Computer Applications</option>
+		<option>Material Science and Engineering</option>
+		<option>Mechanical Engineering</option>
+		<option>Mechatronics Engineering</option>
+		<option>Metallurgical Engineering</option>
+		<option>Petrochemical Engineering</option>
+		<option>Production Engineering</option>
+		<option>Textile Technology</option>
+		<option value="other">Other</option>
+</select>	
+	<br>
+	<br>
+	<select id="yearofstudy" name="year_of_study">
+		<option value="">------------Select Year------------</option>                         
+		<option value="1st year">1st Year</option>
+		<option value="2nd year">2nd year</option>
+		<option value="3rd year">3rd year</option>
+		<option value="4th year">4th year</option>
+		<option value="graduated">PG</option>
+</select>	
+<br>
+		<input type="submit" class="btnRegister"  value="Register"  onclick="return Validate()"/>
+													 
+																			</div>
+													
+																	</div>
+																
+																	</form>
+															</div>
+														 
+													</div>
+											</div>
+									</div>
+	
+							
+			</section>
+			
+
+
+	<!-- /CTA -->
+
+	<!-- Contact -->
+	<div id="contact" class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<!-- section title -->
+				<div class="section-title">
+					<h3 class="title"><span>Contact</span> <span style="color: rgb(121, 118, 255);">Info</span></h3>
+				</div>
+				<!-- /section title -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<h3>Venue</h3>
+						<p>MBA/MCA COUNSELLING HALL,<br> Government College of Technology, <br>Coimbatore - 641013,<br>Tamilnadu.</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<h3>Schedule Queries</h3>
+						<p>Arun Kumar - 90874 40031</p>
+						<h3>General Queries</h3>
+						<p>Vijayamani - 95246 44069</p>
+						<p>Vignesh - 9942970630 </p>
+
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<h3>Email</h3>
+						<a href="mailto:gctitcbe@gmail.com">gctitcbe@gmail.com</a>
+						<br>
+						<a href="mailto:workshop@gctit.com">workshop@gctit.com</a>
+
+					</div>
+				</div>
+			
+				<!-- /contact -->
+
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+
+	<!-- Map -->
+	<center>
+    <style>
+      .google-maps {
+        position: relative;
+        padding-bottom: 75%;
+        height: 0;
+        overflow: hidden;
+      }
+      .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+      }
+    </style>
+    
+    <div class="google-maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.271496490308!2d76.93382291405909!3d11.018245192157673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858dc68b80bbf%3A0x24bab8d60d2bc693!2sGovernment%20College%20of%20Technology!5e0!3m2!1sen!2sin!4v1579877057684!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0"></iframe>
+    </div>	</center><br><br>
+	</div>
+	<!-- /Contact -->
+
+	<!-- Footer -->
+	<footer id="footer" style ="display: block;background-color: rgb(5, 4, 34); height: 300px; margin: auto;" >
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+
+				<!-- footer logo -->
+				<div class="col-md-4 col-md-push-4">
+					<div class="footer-brand">
+						<a class="logo" href="index.html">
+							<img class="logo-img" src="./img/ita.png" alt="logo">
+						</a>
+					</div>
+				</div>
+				<!-- /footer logo -->
+
+				<!-- contact social -->
+				<div class="col-md-4 col-md-push-4">
+					<div class="contact-social">
+						<a href="https://www.facebook.com/gctita" target="_blank"><i class="fa fa-facebook"></i></a>
+						<a href="https://twitter.com/gctitcbe" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.youtube.com/channel/UCO8R4Gsv5tqZiLyoTYsa9Og" target="_blank"><i class="fa fa-youtube"></i></a>
+						<a href="https://www.instagram.com/ita_gct/" target="_blank"><i class="fa fa-instagram"></i></a>
+						
+						<a href="https://www.linkedin.com/in/gctita/" target="_blank"><i class="fa fa fa-linkedin"></i></a>
+					</div>
+				</div>
+				<!-- /contact social -->
+
+				<!-- copyright -->
+				<div class="col-md-4 col-md-pull-8">
+					<span class="copyright" style="color:white"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  <br>Designed by <a href="https://www.ratheshprabakar.me" target="_blank" style="color: rgb(121, 118, 255);">Rathesh Prabakar</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+				</div>
+				<!-- /copyright -->
+
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</footer>
+	<!-- /Footer -->
+
+	<!-- jQuery Plugins -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/jquery.countTo.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+$sname = 'localhost';
+$uname= 'gctitcom_admin';
+$passwd = 'Gctcbe13.';
+$dbname = 'gctitcom_technovate';
+<?php
+
+$server = 'localhost';
+$user = 'gctitcom_admin';
+$password = 'Gctcbe13.';
+$database = 'gctitcom_technovate';
+
+
+$subject = "Confirmation of Workshop registration reg.";
+
+// Always set content-type when sending HTML email
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+// More headers
+$headers .= 'From: <workshops@gctit.com>' . "\r\n";
+$headers .= 'Cc: workshops@gctit.com' . "\r\n";
+$headers .= "Reply-To: workshops@gctit.com\r\n";
+$headers .= "Return-Path: workshops@gctit.com\r\n";
+$headers .= "BCC: workshops@gctit.com\r\n";
+
+
+
+$message = '<!doctype html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body style="font-size:17px;text-align:justify;">
+<div style="border:1px solid grey;">
+<div style="background-color:#1227C1;padding:20px;color:white;font-size:20px;">
+ <h2>ITAGCT</h2>
+</div>
+<div style="padding:10px;">
+ <h3>Hi, <span style="color:red;">';
+ 
+ 
+if($_POST['nName']) {
+$name = $_POST['nName'];
+$email = $_POST['email'];
+$mobile = $_POST['phone'];
+$college = $_POST['college'];
+$department = $_POST['department'];
+$gender = $_POST['gender'];
+$year = $_POST['year'];
+$prefix = "ITA19WS";
+
+$message .= $name;
+ $message .='</span></h3>
+<p>
+      Thanks for registering for the <span style="color:red;"><b>Cyber Security Workshop</b></span> powered by K7 Computing. 
+      This email is to confirm you that you have registered. Your registration number is  <b style="color:red;">';
+     
+$conn = new mysqli($server,$user,$password,$database);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$check = "SELECT name FROM workshopRegistration where email = '$email' or mobile = '$mobile'";
+$result = $conn->query($check);
+if($result -> num_rows == 0 ) {
+    $file = fopen('id.txt','r');
+    $id = fread($file, filesize('id.txt'));
+    $id = $id + 1;
+    if($id < 10) {
+        $prefix .= '00'.$id;
+    }
+    else if($id < 100) {
+        $prefix .= '0'.$id;
+    }
+    else {
+        $prefix .= $id;
+    }
+    fclose($file);
+    $message .= $prefix;
+    $sql = "INSERT INTO workshopRegistration VALUES ('$prefix','$name','$email','$mobile','$college','$department','$gender','$year','na','na','na',NOW());";
+    
+    if ($conn->query($sql) === TRUE) {
+        $file = fopen('id.txt','w');
+        fwrite($file,$id);
+        fclose($file);
+        
+        
+        $message .= '.</b></p>
+<p>
+Do remember that you have to bring the following accessories to the workshop.
+<ul>
+ <li>College ID card </li>
+<li>A Laptop</li>
+</ul>
+</p>
+
+<p> You will be supposed to pay the registration fee on spot on the day of workshop (Feb 2,2019). </p>
+<p> <b>(We will notify you if online payment mode is enabled)</b> </p>
+<p>We are expecting your presence. Future updates will be sent to you through this email.</p>
+<p>Regards,</p>
+<h1><b style="color:red;">ITA</b>GCT</h1> 
+<p> Do reach out to us if you have any queries ..</p>
+<h2> General queries : </h2>
+Rajiv Krishna :
+				  <a href="tel://9500384982"  style="display:inline;text-decoration:none;">
++91 9500 384 982
+				  </a><br/>
+ Dhanveer :
+				  <a href="tel://7871317372" style="display:inline;text-decoration:none;">
++91 7871 317 372
+				  </a>
+<h2> Accomodation : </h2>
+Barathkumar :
+				  <a href="tel://8508174894" style="display:inline;text-decoration:none;">
++91 8508 174 894
+				  </a>
+</div>
+<div style="background-color:#1227C1;color:white;padding:20px;">
+<a href="http://workshop.gctit.com" style="text-decoration:none;color:white;font-size:20px;">workshop.gctit.com</a>
+</div>
+</div></body></html>
+';
+
+
+ if(mail($email,$subject,$message,$headers)) {
+      echo '<center><h3>Successfully Registered</h3><h3>Check your inbox or spam folder for confirmation mail</h3>Back to <a href="index.html">Home</a><h3>For any queries,
+      feel free to contact us</h3>Rajiv Krishna :
+				  <a href="tel://9500384982"  style="display:inline;text-decoration:none;">
++91 9500 384 982
+				  </a><br/>
+ Dhanveer :
+				  <a href="tel://7871317372" style="display:inline;text-decoration:none;">
++91 7871 317 372
+				  </a><br/>
+Barathkumar :
+				  <a href="tel://8508174894" style="display:inline;text-decoration:none;">
++91 8508 174 894
+				  </a></center> ';
+ }
+        
+       
+    }
+    else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+    
+}else {
+    echo "Duplicate entries found .. You must have already registered or check your details <br/> Back to <a href='register.html'>Registration</a> Page";
+}
+}
+else {
+    header('register.html');
+}
+
+?>
